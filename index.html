@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.js"></script>
+    <script>
+      fetch('http://httpbin.org/basic-auth/user/passwd',{
+        headers: {
+          Authorization: 'Basic dXNlcjpwYXNzd2Q='
+        }
+      }).then(function(res){
+        res.json().then(function(x){console.log(x)})
+      })
+    </script>
+  </head>
+  <body>
+    <div>
+      Hello
+    </div>
+    <!-- page content -->
+  </body>
+</html>
