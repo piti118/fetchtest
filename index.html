@@ -11,7 +11,7 @@
           Authorization: 'Basic dXNlcjpwYXNzd2Q='
         }
       }).then(function(res){
-        res.json().then(function(x){console.log(x)})
+        return res.json().then(function(x){console.log(x)})
       })
     </script>
   </head>
